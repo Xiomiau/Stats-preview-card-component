@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
-<link rel="stylesheet" href="/desktop.css" media="min-width:1440px">
+<link rel="stylesheet" href="/desktop.css" media="(min-width:1440px)">
   
   <title>Frontend Mentor | Stats preview card component</title>
 
@@ -19,22 +19,23 @@
 
 <main class="main-container">
 
-    <div class="img"></div>
+    <div class="img imgdesktop"></div>
 
-  <h1 class="main-container__title">  Get <span>insights</span> that help your business grow.</h1>
+    <h1 class="main-container__title">  Get <span>insights</span> that help your business grow.</h1>
     <p class="main-container__descr">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-      experience, and overall efficiency.</p>
-  
+        experience, and overall efficiency.</p>
+    
     <div class="container-stats">
-      <p class="container-stats--number1">10k+ </p>
-      <span>companies</span>
-  
-      <p class="container-stats--number2">314 </p>
-      <span>templates</span>
-  
-      <p class="container-stats--number3">12m+ </p>
-      <span>queries</span>
-  
+      
+        <span class="container-stats-descr"> <p class="container-stats--number">10k+ </p>
+          <span>companies</span></span>
+      
+          <span class="container-stats-descr"><p class="container-stats--number">314 </p>
+            <span>templates</span></span>
+      
+          <span class="container-stats-descr"> <p class="container-stats--number">12m+ </p>
+            <span>queries</span></span>
+    
     </div>
 </main>
 

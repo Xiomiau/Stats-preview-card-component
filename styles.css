@@ -44,8 +44,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 1rem 1rem 0 0;
-    width:100%;
-    height: 200px;
+    height: 30vh;
     background-image: linear-gradient(
         hsl(277, 64%, 45%, 0.500), 
         hsla(277, 65%, 45%, 0.500)),
@@ -78,8 +77,9 @@ body {
 .container-stats {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
+
 
 .container-stats p {
     font-family: var(--fuente1);

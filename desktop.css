@@ -1,8 +1,38 @@
 .main-container {
+    
+    margin: 17rem auto 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.img {  
-    grid-column: 2/3;
+.main-container > div { 
+    height: 50%;
+}
+
+.main-container__title,
+.main-container__descr,
+.container-stats {
+    grid-column: 1/2;
+}
+.main-container__title {
+    grid-row: 1/2;
+    font-size: 5rem;
+}
+
+.main-container__descr {
+    grid-row: 2/3;
+    font-size: 2rem;
+    padding: 1rem 7rem;
+    text-align: left;
+    line-height: 3rem;
+}
+
+.container-stats {
+    display: flex;
+    flex-direction: row;
+}
+.container-stats-descr {
+    display: inline;
+    justify-content: center;
+    margin: auto;
 }
