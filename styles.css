@@ -4,8 +4,8 @@
 --Soft-violet: hsl(277, 64%, 61%);
 
 --White :hsl(0, 0%, 100%);
---Slightly-transparent-white:  hsla(0, 0%, 100%, 0.75);
---Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+--Slightly-transparent-white:hsla(0, 0%, 100%, 0.75);
+--Slightly-transparent-white:hsla(0, 0%, 100%, 0.6);
 
 --fuente1: 'Inter', sans-serif;
 --fuente2: 'Lexend Deca', sans-serif;
@@ -24,13 +24,17 @@ html {
 
 body {
     background-color: var(--Very-dark-blue);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
 }
 
 .main-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 65%;
+    margin: 3rem 0 auto;
+    width: 70%;
     background-color: var(--Dark-desaturated-blue);
     border-radius: 1rem;
 }
@@ -53,7 +57,7 @@ body {
     color: var(--White);
     font-family: var(--fuente1);
     font-weight: 700;
-    font-size: 2.2rem;
+    font-size: 2rem;
     padding: 3rem 3rem 0;
 }
 
@@ -65,9 +69,10 @@ body {
     text-align: center;
     color: var(--Slightly-transparent-white);
     font-family: var(--fuente2);
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
-    padding: 3rem;
+    padding: 1rem 4rem 1.5rem;
+    line-height: 1.7rem;
 }
 
 .container-stats {
@@ -77,16 +82,26 @@ body {
 }
 
 .container-stats p {
-    font-family: var(--fuente2);
+    font-family: var(--fuente1);
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
 }
 
 .container-stats span {
     text-transform: uppercase;
     font-family: var(--fuente1);
-    margin-bottom: 1rem;
     font-size: .7rem;
     color: var(--Slightly-transparent-white);
+    letter-spacing: .2rem;
+    margin-bottom: 2rem;
+}
 
+footer {
+    margin: 1rem auto;
+}
+
+footer a {
+    color: var(--Soft-violet);
+    font-family: var(--fuente1);
 }
